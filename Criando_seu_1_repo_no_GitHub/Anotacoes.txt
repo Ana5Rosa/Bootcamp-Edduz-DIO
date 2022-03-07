@@ -1,0 +1,14 @@
+Criamos um repositório no GitHub;
+
+Clonamos esse repositório; 
+git clone link_do_repositorio
+
+Criei a pasta para guardar informações sobre a criação de repositórios e esse arquivo.
+
+Fizemos o commit do arquivo
+git add -A ou git add . para selecionar todos os arquivos do diretorio usado
+git commit -m "Inclusão das anotações sobre a criação de repositórios no GitHub"
+git push origin main - enviando todos os commits que tem localmente para a nuvem
+
+
+
