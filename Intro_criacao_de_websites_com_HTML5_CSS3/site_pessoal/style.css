@@ -125,12 +125,19 @@ p, h3, a
     color: #118C69;
 }
 
-#largescreen a, #smallscreen a
+#largescreen a
 {
     margin: 20px;
     color: #118C69;
     font-weight: bold;
     text-transform: uppercase;
+}
+#smallscreen a 
+{
+  display: block;
+  color: #118C69;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #largescreen a:hover, #certificados a:hover, #smallscreen a:hover
