@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <script src="menu_smallscreen.js" defer></script>
 
     <link rel = "icon" href = "imgs/rosa.ico" type = "image/x-icon">
     
@@ -18,11 +19,30 @@
     <title>Ana Rosa</title>
 </head>
 <body>
-    <nav>
+    <nav id="largescreen">
         <a href="#home">Home</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#certificados">Certificados</a>
         <a href="#contatos" id="button_contatos">Contatos</a>
+    </nav>
+    <nav id="smallscreen">
+        <img src="imgs/menu-aberto.png" alt="Menu" id="botao_menu">
+        <section id="links">
+            <ul>
+                <li id="opcao_home">
+                    <a href="#home">Home</a>
+                </li>
+                <li id="opcao_habilidades">
+                    <a href="#habilidades">Habilidades</a>
+                </li>
+                <li id="opcao_certificados">
+                    <a href="#certificados">Certificados</a>
+                </li>
+                <li id="opcao_contatos">
+                    <a href="#contatos" id="button_contatos">Contatos</a>
+                </li>
+            </ul>
+        </section>
     </nav>
     <main>
         <section id="home">
@@ -35,80 +55,94 @@
             </section>
         </section>
         <section id="habilidades">
-            <header>
-                <h2>Habilidades</h2>
-            </header>
-            <section id="bloco_habilidades">
-                <section class="item">
-                    <h4>HTML:</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 100%;">
+            <section class="fundo">
+                <header>
+                    <h2>Habilidades</h2>
+                </header>
+                <section id="bloco_habilidades">
+                    <section class="item">
+                        <h4>HTML:</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;">
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <section class="item">
+                        <h4>CSS:</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <h4>Lógica de Programação:</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <h4>Banco de dados (PostgreeSQL):</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 50%;">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <h4>GitHub:</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <h4>Git:</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 50%;">
+                            </div>
+                        </div>
+                    </section> 
+                    <section class="item">
+                        <h4>C/C++:</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 50%;">
+                            </div>
+                        </div>
+                    </section>           
+                    <section class="item">
+                        <h4>JavaScript:</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 30%;">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <h4>Inglês:</h4>
+                        <div class="barra">
+                            <div class="progresso" style="width: 30%;">
+                            </div>
+                        </div>
+                    </section>              
                 </section>
-                <section class="item">
-                    <h4>CSS:</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 100%;">
-                        </div>
-                    </div>
-                </section>
-                <section class="item">
-                    <h4>Lógica de Programação:</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 100%;">
-                        </div>
-                    </div>
-                </section>
-                <section class="item">
-                    <h4>Banco de dados (PostgreeSQL):</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 50%;">
-                        </div>
-                    </div>
-                </section>
-                <section class="item">
-                    <h4>GitHub:</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 80%;">
-                        </div>
-                    </div>
-                </section>
-                <section class="item">
-                    <h4>Git:</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 50%;">
-                        </div>
-                    </div>
-                </section> 
-                <section class="item">
-                    <h4>C/C++:</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 50%;">
-                        </div>
-                    </div>
-                </section>           
-                <section class="item">
-                    <h4>JavaScript:</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 30%;">
-                        </div>
-                    </div>
-                </section>
-                <section class="item">
-                    <h4>Inglês:</h4>
-                    <div class="barra">
-                        <div class="progresso" style="width: 30%;">
-                        </div>
-                    </div>
-                </section>              
             </section>
         </section>
         <section id="certificados">
             <header>
                 <h2>Formação</h2>
             </header>
-            
+            <section class="linha_tempo">
+                <h3>UNIRIO - Sistema de informação</h3>
+                <p>(Cursando desde novembro/2021)</p>
+            </section>
+            <section class="linha_tempo">
+                <h3>UFRJ - Desenho Industrial</h3>
+                <p>(Graduação interrompida em 2021, cursada até o 8° período)</p>
+            </section>
+
+            <header>
+                <h2>Cursos</h2>
+            </header>
+                        
             <section class="linha_tempo">
                 <h3>Introdução a criação de websites com HTML5 e CSS3</h3>
                 <p>(Concluído em mar/2022)</p>
@@ -119,11 +153,6 @@
                 <h3>Projetos ágeis com SCRUM</h3>
                 <p>(Concluído em fev/2022)</p>
                 <a href="https://www.dio.me/certificate/FC8572EA/share" target="_blank">Acessar Certificado</a>
-            </section>
-
-            <section class="linha_tempo">
-                <h3>UNIRIO - Sistema de informação</h3>
-                <p>(Cursando desde novembro/2021)</p>
             </section>
             
             <section class="linha_tempo">
@@ -148,11 +177,6 @@
                 <h3>DIO - Lógica de programação essencial</h3>
                 <p>(Concluído em junho/2021)</p>
                 <a href="https://www.dio.me/certificate/97C96733/share" target="_blank">Acessar Certificado</a>
-            </section>
-
-            <section class="linha_tempo">
-                <h3>UFRJ - Desenho Industrial</h3>
-                <p>(Graduação interrompida em 2021, cursada até o 8° período)</p>
             </section>
 
         </section>

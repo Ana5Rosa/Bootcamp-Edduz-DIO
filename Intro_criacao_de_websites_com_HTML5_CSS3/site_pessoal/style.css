@@ -20,6 +20,11 @@ body::-webkit-scrollbar-thumb
     background-size: cover;
     background-position: left center;
 }
+.fundo
+{
+    background-color: #0d0d0da4;
+    height: 100%;
+}
 #certificados
 {
     background-image: url(imgs/Coding-amico.png);
@@ -83,7 +88,7 @@ p, h3, a
     line-height: 22px;
 }
 
-nav
+#largescreen, #smallscreen
 {
     width: 100%;
     box-sizing: border-box;
@@ -92,13 +97,35 @@ nav
     position: fixed;
     background-color: #fff;
 }
+#smallscreen
+{
+    display: none;
+}
+#smallscreen img
+{
+    width: 32px;
+}
+#smallscreen ul
+{
+    list-style-type: none;
+    text-align: left;
+}
+#links
+{
+    display: none;
+}
+#smallscreen li
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 
 #certificados a
 {
     color: #118C69;
 }
 
-nav a
+#largescreen a, #smallscreen a
 {
     margin: 20px;
     color: #118C69;
@@ -106,12 +133,12 @@ nav a
     text-transform: uppercase;
 }
 
-nav a:hover, #certificados a:hover
+#largescreen a:hover, #certificados a:hover, #smallscreen a:hover
 {
     color: #acabab;
 }
 
-nav #button_contatos
+#largescreen #button_contatos
 {
     color: #fff;
     background-color: #118C69; 
@@ -119,7 +146,7 @@ nav #button_contatos
     border-radius: 5px;
 }
 
-nav #button_contatos:hover
+#largescreen #button_contatos:hover
 {
     background-color: #acabab;       
 }
@@ -144,7 +171,7 @@ header img
     padding: 30px 0 50px 0;
 }
 
-#home, #habilidades, #certificados
+#home, .fundo, #certificados
 {
     padding: 100px 0;
 }
@@ -223,9 +250,13 @@ header img
 }
 
 @media screen and (max-width: 900px) {
-    nav
+    #largescreen
     {
         display: none;
+    }
+    #smallscreen
+    {
+        display: block;
     }
     #certificados
     {
